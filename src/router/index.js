@@ -1,6 +1,6 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../view/home.vue'
-import About from '../view/about.vue'
+import { createRouter, createWebHistory } from 'vue-router';
+import Home from '../view/home.vue';
+import About from '../view/about.vue';
 
 const routes = [
   {
@@ -13,11 +13,11 @@ const routes = [
     name: 'About',
     component: About
   }
-]
+];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory('/VueFrontend_1/'), // Adj meg itt egy base path-t!
   routes
-})
+});
 
-export default router
+export default router;
