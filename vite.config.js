@@ -3,6 +3,8 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/VueFrontend_1/',
-  plugins: [vue()]
+  plugins: [vue()],
+  define: {
+    'process.env.BASE_URL': '"./"'
+  }
 })
